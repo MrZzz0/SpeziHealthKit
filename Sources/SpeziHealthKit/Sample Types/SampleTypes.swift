@@ -1331,6 +1331,7 @@ extension SampleType where Sample == HKQuantitySample {
         )
     }
     /// A quantity sample that records time spent in daylight.
+    @available(iOS 17.0, *)
     @inlinable public static var timeInDaylight: SampleType<HKQuantitySample> {
         SampleTypeCache.get(
             identifier: Sample._SampleType._Identifier.timeInDaylight.rawValue,
